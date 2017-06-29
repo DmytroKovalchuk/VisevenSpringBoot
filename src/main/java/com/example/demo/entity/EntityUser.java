@@ -2,11 +2,16 @@ package com.example.demo.entity;
 
 import org.springframework.stereotype.Repository;
 
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
 /**
  * Created by Dima on 27.06.2017.
  */
 //
 
+@Entity
+@Table(name = "VisevenUsers")
 public class EntityUser {
     private Integer userId;
     private String userName;
